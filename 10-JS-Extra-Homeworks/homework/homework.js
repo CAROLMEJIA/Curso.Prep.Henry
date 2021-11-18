@@ -18,6 +18,33 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+  var objetoString ={};
+  var propiedad;
+  var cont=1;
+
+  for(var i = 0; i < string.length; i++){
+
+    propiedad=string[i];
+
+      if (objetoString[propiedad] === undefined){
+
+        objetoString[propiedad] = cont;
+
+
+        
+
+      } else  {
+
+        objetoString[propiedad] ++;
+        
+      }
+
+
+
+  }
+
+  return objetoString;
 }
 
 
@@ -26,6 +53,26 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+  
+  var letraMi='';
+  var letraMa='';
+
+  for(var i = 0; i < s.length; i++){
+ 
+    
+
+    if (s[i]=== s[i].toUpperCase()) {
+
+        letraMa = letraMa + s[i];
+      
+    }else{
+
+      letraMi = letraMi + s[i];
+    }
+  }
+
+  return letraMa + letraMi;
 }
 
 
@@ -43,6 +90,26 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+  var capicua='';
+  var numLetra= numero.toString();
+
+  for(var i=numLetra.length - 1; i>= 0; i--){
+
+
+        capicua= capicua + numLetra[i];
+
+        
+    
+     
+
+  }
+
+  if (capicua === numLetra) {
+
+    return "Es capicua";
+    
+  } else return "No es capicua";
 }
 
 
@@ -50,6 +117,21 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+
+  var nuevoString='';
+
+  for( var i=0; i < cadena.length; i++){
+
+    
+
+    if (cadena[i] !== 'a' && cadena[i] !== 'b' && cadena[i] !== 'c' ) {
+
+      nuevoString = nuevoString + cadena[i];
+      
+    }
+
+  }
+  return nuevoString;
 }
 
 
@@ -57,6 +139,10 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+ 
+
+
 }
 
 

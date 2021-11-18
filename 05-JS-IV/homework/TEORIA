@@ -1,0 +1,6 @@
+Objetos: Es un grupo de propiedades que están asociadas a un valor
+Propiedades: Son un conjunto de carácteriaticas de un objeto que tiene asignado un valor
+Métodos: Son funciones que hacen parte de un objeto
+Bucle for…in: Es un ciclo que permite recorrer un objeto
+Notación de puntos vs notación de corchetes: la notación de puntos me permite acceder a las propiedades de un objeto con el nombre literal 
+mientras que la notación de corchetes me permite acceder a una propiedad cuando no conozco sun nombre
