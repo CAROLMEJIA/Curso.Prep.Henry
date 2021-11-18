@@ -1,5 +1,5 @@
 Variables: Se almacena un valor de algo para usar luego
 Strings: es un tipo de dato (texto)
 Funciones (argumentos, return): es un conjunto de instrucciones alguna operación y devuelve un valor 
-Declaraciones if: ejecuta el código si la sentencia evaluada es verdadera.
+Declaraciones if: ejecuta el código si la sentencia evaluada es verdadera
 Valores booleanos (true, false): es un tipo de dato que solo tiene dos valores
