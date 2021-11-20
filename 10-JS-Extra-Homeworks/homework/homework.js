@@ -10,6 +10,15 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+    var arr =[];
+
+    for(prop in objeto){
+
+      arr.push([prop, objeto[prop]]);
+    }
+
+    return arr;
+
 }
 
 
@@ -82,6 +91,23 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+    //var arregloInver= [];
+    //var guardar="";
+
+    //for(var i=0; i < str.length; i++){
+
+      //guardar=guardar + str[i];
+
+
+        //for(var i=guardar.length - 1; i>=0; i--){
+
+            //arregloInver.push(guardar[i]);
+       // }
+
+    //}
+
+    //npm test JSX.test.jsreturn arregloInver;
+
 } 
 
 
@@ -139,7 +165,7 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-
+  
  
 
 
@@ -152,7 +178,33 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+
+  var interseccion = [];
+
+  for(var i=0; i < arreglo1.length; i++){
+
+    for(var j=0; j < arreglo2.length; j++){
+
+      if (arreglo1[i] === arreglo2[j]) {
+
+        interseccion.push(arreglo1[i]);
+
+        
+      }
+
+
+    }
+  }
+
+  return interseccion;
+
 }
+
+  
+
+
+
+
 
 
 

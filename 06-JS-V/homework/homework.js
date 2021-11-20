@@ -93,7 +93,7 @@ function agregarStringInvertida() {
 
     }
 
-    Persona.prototype.detelle = function(){
+    Persona.prototype.detalle = function(){
 
       return{
         Nombre: this.nombre,
